@@ -29,11 +29,29 @@
           ".pxi"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "cython-tempita",
+        "aliases": [
+          "Cython (Tempita template)",
+          "cython-tempita"
+        ],
+        "filenamePatterns": [
+          "*.pyx.tp",
+          "*.pxd.tp",
+          "*.pxi.tp"
+        ],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
       {
         "language": "cython",
+        "path": "./syntaxes/cython.tmLanguage",
+        "scopeName": "source.cython"
+      },
+      {
+        "language": "cython-tempita",
         "path": "./syntaxes/cython.tmLanguage",
         "scopeName": "source.cython"
       }
